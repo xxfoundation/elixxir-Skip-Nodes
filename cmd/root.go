@@ -129,4 +129,5 @@ func init() {
 		"-", "Path to output signed file")
 	viper.BindPFlag("output", rootCmd.PersistentFlags().Lookup(
 		"output"))
+	viper.SetDefault("output", "skipNodes.json")
 }
